@@ -159,3 +159,165 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+* html {
+  font-size: 100%; }
+
+html {
+  font-size: 16px;
+  line-height: 1.5em; }
+
+a {
+  color: #369; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.content {
+  *zoom: 1; }
+  .content:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.block-group {
+  float: left; }
+
+.block {
+  float: left;
+  background-size: cover; }
+
+.block-1-1 {
+  width: 190px;
+  height: 190px;
+  margin: 0 10px 10px 0; }
+
+.block-1-2 {
+  width: 190px;
+  height: 390px;
+  margin: 0 10px 10px 0; }
+
+.block-1-3 {
+  width: 190px;
+  height: 590px;
+  margin: 0 10px 10px 0; }
+
+.block-1-4 {
+  width: 190px;
+  height: 790px;
+  margin: 0 10px 10px 0; }
+
+.block-1-5 {
+  width: 190px;
+  height: 990px;
+  margin: 0 10px 10px 0; }
+
+.block-2-1 {
+  width: 390px;
+  height: 190px;
+  margin: 0 10px 10px 0; }
+
+.block-2-2 {
+  width: 390px;
+  height: 390px;
+  margin: 0 10px 10px 0; }
+
+.block-2-3 {
+  width: 390px;
+  height: 590px;
+  margin: 0 10px 10px 0; }
+
+.block-2-4 {
+  width: 390px;
+  height: 790px;
+  margin: 0 10px 10px 0; }
+
+.block-2-5 {
+  width: 390px;
+  height: 990px;
+  margin: 0 10px 10px 0; }
+
+.block-3-1 {
+  width: 590px;
+  height: 190px;
+  margin: 0 10px 10px 0; }
+
+.block-3-2 {
+  width: 590px;
+  height: 390px;
+  margin: 0 10px 10px 0; }
+
+.block-3-3 {
+  width: 590px;
+  height: 590px;
+  margin: 0 10px 10px 0; }
+
+.block-3-4 {
+  width: 590px;
+  height: 790px;
+  margin: 0 10px 10px 0; }
+
+.block-3-5 {
+  width: 590px;
+  height: 990px;
+  margin: 0 10px 10px 0; }
+
+.block-4-1 {
+  width: 790px;
+  height: 190px;
+  margin: 0 10px 10px 0; }
+
+.block-4-2 {
+  width: 790px;
+  height: 390px;
+  margin: 0 10px 10px 0; }
+
+.block-4-3 {
+  width: 790px;
+  height: 590px;
+  margin: 0 10px 10px 0; }
+
+.block-4-4 {
+  width: 790px;
+  height: 790px;
+  margin: 0 10px 10px 0; }
+
+.block-4-5 {
+  width: 790px;
+  height: 990px;
+  margin: 0 10px 10px 0; }
+
+.block-5-1 {
+  width: 990px;
+  height: 190px;
+  margin: 0 10px 10px 0; }
+
+.block-5-2 {
+  width: 990px;
+  height: 390px;
+  margin: 0 10px 10px 0; }
+
+.block-5-3 {
+  width: 990px;
+  height: 590px;
+  margin: 0 10px 10px 0; }
+
+.block-5-4 {
+  width: 990px;
+  height: 790px;
+  margin: 0 10px 10px 0; }
+
+.block-5-5 {
+  width: 990px;
+  height: 990px;
+  margin: 0 10px 10px 0; }
+
+.block-group-size-1 {
+  width: 200px; }
+
+.block-group-size-2 {
+  width: 400px; }
+
+.block-group-size-3 {
+  width: 600px; }
