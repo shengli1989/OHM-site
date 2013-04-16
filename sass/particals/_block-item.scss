@@ -3,6 +3,7 @@
 }
 
 .block {
+  position: relative;
   margin-bottom: 20px;
   float: left;
   background-size: cover;
@@ -28,16 +29,42 @@
 @for $width from 1 through 6 {
   @for $height from 1 through 5 {
     .block-#{$width}-#{$height} {
-      $margin: 2%;
-      width: ($width/6*100%)-$margin;
+      $margin: 1%;
+      width: ($width/6*100%)-$margin*2;
       height: 200px * $height;
-      margin: 0 $margin $margin 0;
+      margin: 0 $margin 1em $margin ;
     }
   }
 }
 
 @for $width from 1 through 5 {
   .block-group-size-#{$width} {
-    @include span-columns($width,5)
+    width: $width*20%;
   }
+}
+.grid {
+  margin: 0 -.5%;
+}
+
+.project-grid {
+  margin: 0 -1%;
+}
+
+//組件
+.block-content {
+  position: absolute;
+}
+
+.title {
+  position: relative;
+  .number {
+    position: absolute;
+    top: 0;
+    @include adjust-font-size-to(36px,1.5)
+  }
+}
+.more {
+  margin-left: 1em;
+  color: #FFF;
+  background-color: red;
 }

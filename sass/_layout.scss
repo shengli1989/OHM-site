@@ -5,8 +5,8 @@ $gutter-width   : 1.5em;
 $grid-padding   : 1em;
 
 // add media
-$ipad           : 641px 10;  // min-width 641px 寬度超過 641px 後的欄位數量
-$desktop        : 941px 15; // min-width 941px 寬度超過 941px 後的欄位數量
+$ipad           : 641px 8;  // min-width 641px 寬度超過 641px 後的欄位數量
+$desktop        : 941px 12; // min-width 941px 寬度超過 941px 後的欄位數量
 
 
 .container {
@@ -32,7 +32,9 @@ body {
 }
 
 .header {
-
+  @include leader(1);
+  @include trailer(1);
+  @include pie-clearfix;
 }
 
 .content {

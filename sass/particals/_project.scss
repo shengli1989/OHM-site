@@ -1,0 +1,50 @@
+.project {
+  .title {
+    float: left;
+  }
+}
+.project-meta {
+  margin-left: 5em;
+  float: left;
+  @include adjust-font-size-to(24px,2);
+}
+.project-member {
+  @include pie-clearfix;
+  @include padding-leader(1);
+  @include padding-trailer(1);
+  clear: both;
+  li {
+    margin-right: 2em;
+    float: left;
+  }
+}
+
+
+
+.project-member-job {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 1.0;
+  margin-right: .5em;
+  padding: 15px;
+  width: 2em;
+  float: left;
+  background: black;
+  @include border-radius(50px);
+}
+.project-member-count {
+  @include adjust-font-size-to(48px,3)
+}
+
+.project-content {
+  clear: both;
+}
+
+.submit {
+  display: block;
+  border: 1px solid #555;
+  padding: 5px 10px;
+  margin: 0 auto;
+  width: 5em;
+
+}

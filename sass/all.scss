@@ -8,5 +8,14 @@
 @import "layout";
 
 
+@import "particals/header";
 @import "particals/block-item";
+@import "particals/member";
+@import "particals/project";
 
+.footer {
+  @include pie-clearfix;
+  p {
+    float: right;
+  }
+}

@@ -1,0 +1,27 @@
+.sub-header {
+  @include pie-clearfix;
+}
+.member-name {
+  @include span-columns(4,12);
+  @include leader(.5);
+  @include adjust-font-size-to(32px);
+  float: left;
+}
+.member-en-name {
+  @include adjust-font-size-to(10px);
+  margin-left: 1em;
+}
+.member-pro {
+  float: left;
+  li {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 1.0;
+    margin-right: 1em;
+    padding: 15px;
+    width: 2em;
+    float: left;
+    background: black;
+    @include border-radius(50px);
+  }
+}
