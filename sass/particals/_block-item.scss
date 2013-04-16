@@ -8,6 +8,23 @@
   background-size: cover;
 }
 
+//@for $width from 1 through 6 {
+  //@for $height from 1 through 5 {
+    //.block-#{$width}-#{$height} {
+      //$margin: 2%;
+      //width: ($width/6*100%)-$margin;
+      //height: 200px * $height;
+      //margin: 0 $margin $margin 0;
+    //}
+  //}
+//}
+//
+//@for $width from 1 through 5 {
+  //.block-group-size-#{$width*3} {
+    //width: $width*3/15*100%;
+  //}
+//}
+
 @for $width from 1 through 6 {
   @for $height from 1 through 5 {
     .block-#{$width}-#{$height} {
@@ -20,7 +37,7 @@
 }
 
 @for $width from 1 through 5 {
-  .block-group-size-#{$width*3} {
-    width: $width*3/15*100%;
+  .block-group-size-#{$width} {
+    @include span-columns($width,5)
   }
 }

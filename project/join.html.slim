@@ -1,0 +1,25 @@
+.main
+  h2.project-title
+    |HYBRID PROJECT
+    span.number #1
+  .project-meta 紙教堂文創商品開發計劃
+  ul.project-member
+    li
+      span.project-member-job 產品設計
+      span.project-member-count x1
+    li
+      span.project-member-job 平面設計
+      span.project-member-count x2
+    li
+      span.project-member-job 網頁設計
+      span.project-member-count x1
+  .project-content
+    - (rand(3)+2).times do
+      h3= zh_lorem_sentence
+      p= zh_lorem_paragraphs(2)
+  .action
+    button type="submit" 我要報名
+.aside
+  ul.img-list
+    - 3.times do
+      li= image_tag lorem_image("300x200")
