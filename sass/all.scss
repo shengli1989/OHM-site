@@ -5,39 +5,8 @@
 @include normalize;
 @include establish-baseline;
 @import "typography";
-//@import "layout";
+@import "layout";
 
 
+@import "particals/block-item";
 
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.content {
-  @include pie-clearfix;
-}
-.block-group {
-  float: left;
-}
-.block {
-  float: left;
-  background-size: cover;
-}
-
-@for $width from 1 through 5 {
-  @for $height from 1 through 5 {
-    $margin: 10px;
-    .block-#{$width}-#{$height} {
-      width: 200px * $width - $margin;
-      height: 200px * $height - $margin;
-      margin: 0 $margin $margin 0;
-    }
-  }
-}
-@for $width from 1 through 3 {
-  .block-group-size-#{$width} {
-    width: 200px * $width;
-  }
-}

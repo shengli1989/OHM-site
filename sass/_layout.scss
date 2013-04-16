@@ -32,13 +32,12 @@ body {
 }
 
 .header {
-  @include leader(1);
-  @include trailer(1);
+
 }
 
 .content {
+  @include pie-clearfix;
   @include padding-leader(1);
-  @include padding-trailer(1);
   background: rgba(white,.5);
 }
 
@@ -48,19 +47,3 @@ body {
 
 
 
-.block {
-  float: left;
-  background-size: cover;
-  display: block;
-}
-
-@for $width from 1 through 5 {
-  @for $height from 1 through 5 {
-    $margin: 10px;
-    .block-#{$width}-#{$height} {
-      width: 100px * $width - $margin;
-      height: 100px * $height - $margin;
-      margin: 0 $margin $margin 0;
-    }
-  }
-}
