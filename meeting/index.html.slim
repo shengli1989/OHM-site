@@ -1,13 +1,15 @@
-.main
-  h2.meeting-title
-    |HYBRID MEETING
-  .meeting-meta 跨界雅談 每週二晚間七點半
-  .meeting-content
-    - (rand(3)+2).times do
-      h3= zh_lorem_sentence
-      p= zh_lorem_paragraphs(2)
-  .action
-    button type="submit" 我要報名
-.aside
-  ul.img-list
-    li= image_tag lorem_image("300x200")
+.meeting-page
+  .main
+    h2.meeting-title
+      |HYBRID MEETING
+    .meeting-meta 跨界雅談 每週二晚間七點半
+    .meeting-content
+      - (rand(3)+2).times do
+        h3= zh_lorem_sentence
+        p= zh_lorem_paragraphs(2)
+    .action
+      a.submit href="#" 我要報名
+      -#button type="submit" 我要報名
+  .aside
+    ul.img-list
+      li= image_tag lorem_image("300x200")

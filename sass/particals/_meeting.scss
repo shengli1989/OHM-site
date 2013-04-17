@@ -1,0 +1,19 @@
+.meeting-page {
+  .main {
+    @include span-columns(6 omega,12);
+  }
+  .aside {
+    @include span-columns(6,12);
+  }
+}
+
+
+.meeting-content {
+  @include leader(1);
+}
+
+.meeting-page .submit {
+  margin: 0;
+  float: right;
+}
+

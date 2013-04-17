@@ -1,4 +1,4 @@
-.project {
+.project-page {
   .title {
     float: left;
   }
@@ -29,7 +29,7 @@
   padding: 15px;
   width: 2em;
   float: left;
-  background: black;
+  background: #666;
   @include border-radius(50px);
 }
 .project-member-count {
@@ -46,5 +46,4 @@
   padding: 5px 10px;
   margin: 0 auto;
   width: 5em;
-
 }
