@@ -1,5 +1,5 @@
-.main
-  .project-page
+.project-page
+  .main
     h2.title
       |HYBRID
       br/
@@ -23,7 +23,7 @@
     .action
       a.submit href="#" 我要報名
       -#button type="submit" 我要報名
-.aside
-  ul.img-list
-    - 3.times do
-      li= image_tag lorem_image("300x200")
+  .aside
+    ul.img-list
+      - (rand(2)+1).times do
+        li= image_tag lorem_image("300x200")

@@ -17,6 +17,7 @@
 .footer {
   @include pie-clearfix;
   p {
+    @include adjust-font-size-to(12px);
     float: right;
   }
 }
