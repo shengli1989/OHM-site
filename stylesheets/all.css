@@ -269,23 +269,50 @@ a {
     margin-left: 1em;
     float: left; }
 
+@media (max-width: 40em) {
+  .logo {
+    position: static; }
+
+  .nav {
+    float: none;
+    padding-top: 0; }
+    .nav li {
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      border-bottom: 1px solid #dddddd; } }
 .reserve {
   position: absolute;
   top: 0;
   right: 0;
-  color: #FFF;
-  display: block;
-  float: right;
-  background-color: red; }
+  border-top: 1px solid #e698a7;
+  background: #660821;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b82b34), to(#660821));
+  background: -webkit-linear-gradient(top, #b82b34, #660821);
+  background: -moz-linear-gradient(top, #b82b34, #660821);
+  background: -ms-linear-gradient(top, #b82b34, #660821);
+  background: -o-linear-gradient(top, #b82b34, #660821);
+  padding: 1px 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: black 0 1px 0;
+  -moz-box-shadow: black 0 1px 0;
+  box-shadow: black 0 1px 0;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  color: white;
+  text-decoration: none;
+  vertical-align: middle; }
 
-.block-group {
-  float: left; }
+.reserve:hover {
+  border-top-color: #287851;
+  background: #287851;
+  color: #ccc; }
 
-.block {
-  position: relative;
-  margin-bottom: 20px;
-  float: left;
-  background-size: cover; }
+.reserve:active {
+  border-top-color: #1b435e;
+  background: #1b435e; }
 
 .block-1-1 {
   width: 14.66667%;
@@ -452,14 +479,42 @@ a {
 .block-group-size-5 {
   width: 100%; }
 
-.grid {
+.home-page-grid {
   margin: 0 -0.5%; }
 
-.project-grid {
+.project-page-grid {
   margin: 0 -1%; }
 
+.block-group {
+  float: left; }
+
+.block {
+  position: relative;
+  margin-bottom: 20px;
+  float: left;
+  background-size: cover; }
+
 .block-content {
-  position: absolute; }
+  width: 90%;
+  background: rgba(3, 3, 3, 0.2);
+  padding: 0 5%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  position: absolute;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.57)), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#91000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */ }
 
 .title {
   position: relative; }
@@ -471,26 +526,92 @@ a {
 
 .more {
   margin-left: 1em;
+  padding: 2px 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   color: #FFF;
   background-color: red; }
 
+.name .block-content .text {
+  float: right; }
+
+.talking .block-content, .meeting .block-content, .project .block-content, .space .block-content {
+  bottom: 0;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.57) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.57)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.57) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.57) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.57) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.57) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#91000000',GradientType=0 );
+  /* IE6-9 */ }
+
+.talking .block-content .text {
+  float: right; }
+
+.space .block-content h2 {
+  float: left; }
+.space .block-content .meta {
+  margin-left: 1em;
+  float: left; }
+
+.intro .block-content {
+  position: absolute;
+  bottom: 0;
+  background: none; }
+  .intro .block-content h2 {
+    float: left; }
+  .intro .block-content .meta {
+    margin-left: 1em;
+    margin-top: 1.5em;
+    float: right; }
+
+@media (min-width: 0em) and (max-width: 40em) {
+  .block-group {
+    float: none; }
+
+  .block {
+    width: 100%; }
+
+  .block-group-size-1 {
+    width: 100%; }
+
+  .block-group-size-2 {
+    width: 100%; }
+
+  .block-group-size-3 {
+    width: 100%; }
+
+  .block-group-size-4 {
+    width: 100%; }
+
+  .block-group-size-5 {
+    width: 100%; } }
 .sub-header {
   *zoom: 1; }
   .sub-header:after {
     content: "";
     display: table;
     clear: both; }
-
-.member-name {
-  width: 32.02614%;
-  float: left;
-  margin-right: 1.96078%;
-  display: inline;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-  font-size: 2em;
-  line-height: 1.5em;
-  float: left; }
+  .sub-header .member-name {
+    width: 32.02614%;
+    float: left;
+    margin-right: 1.96078%;
+    display: inline;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    font-size: 2em;
+    line-height: 1.5em;
+    float: left; }
 
 .member-en-name {
   font-size: 0.625em;
@@ -513,6 +634,11 @@ a {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     border-radius: 50px; }
+
+.sub-header h2 {
+  margin-bottom: 0.75em;
+  font-size: 1.125em;
+  line-height: 1.33333em; }
 
 .project-page .title {
   float: left; }
@@ -561,9 +687,9 @@ a {
 .submit {
   display: block;
   border: 1px solid #555555;
-  padding: 5px 10px;
+  padding: 5px 20px;
   margin: 0 auto;
-  width: 5em; }
+  width: 4em; }
 
 .meeting-page .main {
   width: 49.01961%;
@@ -591,4 +717,6 @@ a {
     display: table;
     clear: both; }
   .footer p {
+    font-size: 0.75em;
+    line-height: 2em;
     float: right; }

@@ -1,12 +1,12 @@
 .sub-header {
   @include pie-clearfix;
-}
-.member-name {
-  @include span-columns(4,12);
-  @include leader(.5);
-  @include trailer(.5);
-  @include adjust-font-size-to(32px);
-  float: left;
+  .member-name {
+    @include span-columns(4,12);
+    @include leader(.5);
+    @include trailer(.5);
+    @include adjust-font-size-to(32px);
+    float: left;
+  }
 }
 .member-en-name {
   @include adjust-font-size-to(10px);

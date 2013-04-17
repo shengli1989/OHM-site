@@ -12,6 +12,7 @@
     @include adjust-font-size-to(12px,1);
   }
 }
+
 .nav {
   @include padding-leader(2);
   float: right;
@@ -20,12 +21,54 @@
     float: left;
   }
 }
+
+
+@include at-breakpoint(0 40em) {
+  .logo {
+    position: static;
+  }
+  .nav {
+    float: none;
+    padding-top: 0;
+    li {
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+
 .reserve {
   position: absolute;
   top: 0;
   right: 0;
-  color: #FFF;
-  display: block;
-  float: right;
-  background-color: red;
+  border-top: 1px solid #e698a7;
+  background: #660821;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b82b34), to(#660821));
+  background: -webkit-linear-gradient(top, #b82b34, #660821);
+  background: -moz-linear-gradient(top, #b82b34, #660821);
+  background: -ms-linear-gradient(top, #b82b34, #660821);
+  background: -o-linear-gradient(top, #b82b34, #660821);
+  padding: 1px 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+  }
+.reserve:hover {
+border-top-color: #287851;
+background: #287851;
+color: #ccc;
+}
+.reserve:active {
+border-top-color: #1b435e;
+background: #1b435e;
 }
