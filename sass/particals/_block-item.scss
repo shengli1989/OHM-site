@@ -102,9 +102,27 @@ $col: 8;
   .meta {
     @include ellipsis;
   }
-
+  .project-block-group {
+    $tot-col: 10;
+    @include span-columns(10,10);
+    @for $width from 1 through 5 {
+       @for $height from 1 through 5 {
+        .block-#{$width}-#{$height} {
+          width: columns($width*2,$tot-col);
+          padding-top: columns($height*2,$tot-col);
+        }
+      }
+    }
+    .block {
+      float: left;
+      margin-right: gutter($tot-col);
+      margin-bottom: gutter($tot-col);
+    }
+    .mgr0 {
+      margin-right: 0;
+    }
+  }
 }
-
 
 // responsive-desktop
 @include at-breakpoint($desktop) {

@@ -542,7 +542,93 @@ body {
     overflow: hidden;
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
-    text-overflow: ellipsis; } }
+    text-overflow: ellipsis; }
+
+  .project-block-group {
+    width: 100%;
+    float: left;
+    margin-right: 2.3622%; }
+    .project-block-group .block-1-1 {
+      width: 18.11024%;
+      padding-top: 18.11024%; }
+    .project-block-group .block-1-2 {
+      width: 18.11024%;
+      padding-top: 38.58268%; }
+    .project-block-group .block-1-3 {
+      width: 18.11024%;
+      padding-top: 59.05512%; }
+    .project-block-group .block-1-4 {
+      width: 18.11024%;
+      padding-top: 79.52756%; }
+    .project-block-group .block-1-5 {
+      width: 18.11024%;
+      padding-top: 100%; }
+    .project-block-group .block-2-1 {
+      width: 38.58268%;
+      padding-top: 18.11024%; }
+    .project-block-group .block-2-2 {
+      width: 38.58268%;
+      padding-top: 38.58268%; }
+    .project-block-group .block-2-3 {
+      width: 38.58268%;
+      padding-top: 59.05512%; }
+    .project-block-group .block-2-4 {
+      width: 38.58268%;
+      padding-top: 79.52756%; }
+    .project-block-group .block-2-5 {
+      width: 38.58268%;
+      padding-top: 100%; }
+    .project-block-group .block-3-1 {
+      width: 59.05512%;
+      padding-top: 18.11024%; }
+    .project-block-group .block-3-2 {
+      width: 59.05512%;
+      padding-top: 38.58268%; }
+    .project-block-group .block-3-3 {
+      width: 59.05512%;
+      padding-top: 59.05512%; }
+    .project-block-group .block-3-4 {
+      width: 59.05512%;
+      padding-top: 79.52756%; }
+    .project-block-group .block-3-5 {
+      width: 59.05512%;
+      padding-top: 100%; }
+    .project-block-group .block-4-1 {
+      width: 79.52756%;
+      padding-top: 18.11024%; }
+    .project-block-group .block-4-2 {
+      width: 79.52756%;
+      padding-top: 38.58268%; }
+    .project-block-group .block-4-3 {
+      width: 79.52756%;
+      padding-top: 59.05512%; }
+    .project-block-group .block-4-4 {
+      width: 79.52756%;
+      padding-top: 79.52756%; }
+    .project-block-group .block-4-5 {
+      width: 79.52756%;
+      padding-top: 100%; }
+    .project-block-group .block-5-1 {
+      width: 100%;
+      padding-top: 18.11024%; }
+    .project-block-group .block-5-2 {
+      width: 100%;
+      padding-top: 38.58268%; }
+    .project-block-group .block-5-3 {
+      width: 100%;
+      padding-top: 59.05512%; }
+    .project-block-group .block-5-4 {
+      width: 100%;
+      padding-top: 79.52756%; }
+    .project-block-group .block-5-5 {
+      width: 100%;
+      padding-top: 100%; }
+    .project-block-group .block {
+      float: left;
+      margin-right: 2.3622%;
+      margin-bottom: 2.3622%; }
+    .project-block-group .mgr0 {
+      margin-right: 0; } }
 @media (min-width: 1025px) {
   .col1 {
     width: 59.375%;
