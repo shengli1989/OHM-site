@@ -1,39 +1,30 @@
 .header {
   position: relative;
+  text-align: center;
 }
 
 .logo {
-  position: absolute;
-
-  h1 {
-    @include adjust-font-size-to(48px,2);
-  }
-  .logo-meta {
-    @include adjust-font-size-to(12px,1);
-  }
+  text-align: center;
+  @include adjust-font-size-to(72px,3);
 }
 
 .nav {
-  @include padding-leader(2);
-  float: right;
   li {
-    margin-left: 1em;
-    float: left;
+    text-align: center;
+    line-height: 35px;
+    border-bottom: 1px solid #ddd;
   }
 }
 
 .reserve {
-  position: absolute;
-  top: 0;
-  right: 0;
   border-top: 1px solid #e698a7;
+  padding: 1px 8px;
   background: #660821;
   background: -webkit-gradient(linear, left top, left bottom, from(#b82b34), to(#660821));
   background: -webkit-linear-gradient(top, #b82b34, #660821);
   background: -moz-linear-gradient(top, #b82b34, #660821);
   background: -ms-linear-gradient(top, #b82b34, #660821);
   background: -o-linear-gradient(top, #b82b34, #660821);
-  padding: 1px 8px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -44,32 +35,53 @@
   color: white;
   text-decoration: none;
   vertical-align: middle;
-  }
+}
+
 .reserve:hover {
-border-top-color: #287851;
-background: #287851;
-color: #ccc;
+  border-top-color: #287851;
+  background: #287851;
+  color: #ccc;
 }
+
 .reserve:active {
-border-top-color: #1b435e;
-background: #1b435e;
+  border-top-color: #1b435e;
+  background: #1b435e;
 }
 
 
-//responsive
-@include at-breakpoint(0 40em) {
+
+//responsive=ipad
+@include at-breakpoint($ipad) {
+
   .logo {
-    position: static;
+    text-align: left;
+  }
+  .reserve {
+    position: absolute;
+    top: 10px;
+    right: 0;
   }
   .nav {
-    float: none;
-    padding-top: 0;
+    margin: 0;
     li {
-      float: none;
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
-      border-bottom: 1px solid #ddd;
+      line-height: 24px;
+      margin-right: 1em;
+      float: left;
+      border-bottom: none;
     }
   }
+
+}
+
+
+//responsive-desktop
+@include at-breakpoint($desktop) {
+  .logo {
+    float: left;
+  }
+  .nav {
+    @include leader(2);
+    float: right;
+  }
+
 }

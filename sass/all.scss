@@ -10,10 +10,13 @@
 
 @import "particals/header";
 @import "particals/block-item";
-@import "particals/member";
-@import "particals/project";
-@import "particals/meeting";
+@import "pages/member";
+@import "pages/project";
+@import "pages/meeting";
 
+
+
+//footer
 .footer {
   @include pie-clearfix;
   p {
