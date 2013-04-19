@@ -22,24 +22,6 @@
   }
 }
 
-
-@include at-breakpoint(0 40em) {
-  .logo {
-    position: static;
-  }
-  .nav {
-    float: none;
-    padding-top: 0;
-    li {
-      float: none;
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
-      border-bottom: 1px solid #ddd;
-    }
-  }
-}
-
 .reserve {
   position: absolute;
   top: 0;
@@ -71,4 +53,23 @@ color: #ccc;
 .reserve:active {
 border-top-color: #1b435e;
 background: #1b435e;
+}
+
+
+//responsive
+@include at-breakpoint(0 40em) {
+  .logo {
+    position: static;
+  }
+  .nav {
+    float: none;
+    padding-top: 0;
+    li {
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      border-bottom: 1px solid #ddd;
+    }
+  }
 }

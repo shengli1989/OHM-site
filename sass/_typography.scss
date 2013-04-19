@@ -1,10 +1,12 @@
 body {
   color: #555;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 #{headings(all)} {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 h3 {
   @include trailer(.5);

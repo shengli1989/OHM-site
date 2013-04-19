@@ -23,7 +23,7 @@
       $margin: 1%;
       width: ($width/6*100%)-$margin*2;
       height: 200px * $height;
-      margin: 0 $margin 1em $margin ;
+      margin: 0 $margin $margin*2 $margin ;
     }
   }
 }
@@ -47,18 +47,15 @@
 
 .block {
   position: relative;
-  margin-bottom: 20px;
   float: left;
   background-size: cover;
+  background-position: center center;
 }
 .block-content {
-  $padding:5%;
-  width: 100%-$padding*2;
-  background: rgba(3,3,3,.2);
-  padding: 0 $padding;
-  @include padding-leader(1);
-  @include padding-trailer(1);
   position: absolute;
+  width: 100%;
+  @include box-sizing(border-box);
+  padding: 20px;
   background: -moz-linear-gradient(top,  rgba(0,0,0,0.57) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.57)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top,  rgba(0,0,0,0.57) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
