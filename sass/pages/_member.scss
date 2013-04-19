@@ -1,28 +1,38 @@
 .sub-header {
   @include pie-clearfix;
   .member-name {
-    @include span-columns(4,12);
-    @include leader(.5);
-    @include trailer(.5);
-    @include adjust-font-size-to(32px);
+    @include adjust-font-size-to(32px,2);
     float: left;
   }
 }
 .member-en-name {
   @include adjust-font-size-to(10px);
-  margin-left: 1em;
+  margin: 1em;
 }
 .member-pro {
+  @include trailer(1);
   float: left;
   li {
     color: #FFF;
     font-size: 18px;
     line-height: 1.0;
-    margin: 0 1em;
     padding: 15px;
+    margin-right: 1em;
     width: 2em;
     float: left;
     background: #666;
     @include border-radius(50px);
   }
+}
+
+
+
+@include at-breakpoint($ipad) {
+
+  .member-name {
+    @include leader(.5);
+    width: columns(4,10)+gutter(10);
+  }
+
+
 }

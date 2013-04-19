@@ -1,6 +1,6 @@
 .sub-header {
   h2 {
-    @include trailer(.5);
+    //@include trailer(.5);
     @include adjust-font-size-to(18px);
   }
 }

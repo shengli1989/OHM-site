@@ -294,24 +294,22 @@ body {
     display: table;
     clear: both; }
 
-.main {
-  width: 66.01307%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1.5em;
-  display: inline; }
+.aside img {
+  width: 100%;
+  height: auto; }
+.aside ul {
+  list-style-type: none; }
 
-.aside {
-  width: 32.02614%;
-  float: left;
-  margin-right: 1.96078%;
-  display: inline; }
-  .aside img {
-    width: 100%;
-    height: auto; }
-  .aside ul {
-    list-style-type: none; }
+@media (min-width: 841px) {
+  .main {
+    width: 59.05512%;
+    float: right;
+    margin-right: 0; }
 
+  .aside {
+    width: 38.58268%;
+    float: left;
+    margin-right: 2.3622%; } }
 .header {
   position: relative;
   text-align: center; }
@@ -322,6 +320,10 @@ body {
   line-height: 1em; }
 
 .nav li {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   text-align: center;
   line-height: 35px;
   border-bottom: 1px solid #dddddd; }
@@ -357,7 +359,11 @@ body {
 
 @media (min-width: 841px) {
   .logo {
-    text-align: left; }
+    text-align: left;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
   .reserve {
     position: absolute;
@@ -365,7 +371,11 @@ body {
     right: 0; }
 
   .nav {
-    margin: 0; }
+    margin: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
     .nav li {
       line-height: 24px;
       margin-right: 1em;
@@ -712,12 +722,6 @@ body {
     display: table;
     clear: both; }
   .sub-header .member-name {
-    width: 32.02614%;
-    float: left;
-    margin-right: 1.96078%;
-    display: inline;
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
     font-size: 2em;
     line-height: 1.5em;
     float: left; }
@@ -725,16 +729,17 @@ body {
 .member-en-name {
   font-size: 0.625em;
   line-height: 2.4em;
-  margin-left: 1em; }
+  margin: 1em; }
 
 .member-pro {
+  margin-bottom: 1.5em;
   float: left; }
   .member-pro li {
     color: #FFF;
     font-size: 18px;
     line-height: 1.0;
-    margin: 0 1em;
     padding: 15px;
+    margin-right: 1em;
     width: 2em;
     float: left;
     background: #666;
@@ -744,8 +749,11 @@ body {
     -o-border-radius: 50px;
     border-radius: 50px; }
 
+@media (min-width: 841px) {
+  .member-name {
+    margin-top: 0.75em;
+    width: 40.94488%; } }
 .sub-header h2 {
-  margin-bottom: 0.75em;
   font-size: 1.125em;
   line-height: 1.33333em; }
 
