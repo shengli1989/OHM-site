@@ -1,15 +1,14 @@
-.sub-header
-  h2.member-name
-    = zh_lorem_name
-    span.member-en-name= lorem_name
-  ul.member-pro
-    - 4.times do
-      li= zh_lorem_words(4)
 .main
+  .sub-header
+    h2.member-name
+      = zh_lorem_name
+      span.member-en-name= lorem_name
+    ul.member-pro
+      - 4.times do
+        li= zh_lorem_words(4)
   - (rand(3)+2).times do
     h3= zh_lorem_sentence
     p= zh_lorem_paragraphs(2)
-.aside
-  ul.img-list
-    - (rand(2)+1).times do
-      li= image_tag lorem_image("300x200")
+.photo
+  - (rand(2)+1).times do
+    = image_tag lorem_image("300x200")

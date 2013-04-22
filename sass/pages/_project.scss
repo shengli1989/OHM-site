@@ -10,9 +10,7 @@
     float: left;
   }
 }
-.project-meta {
-  margin-left: 5em;
-  float: left;
+.project-page .meta {
   @include adjust-font-size-to(24px,2);
 }
 .project-member {
@@ -47,7 +45,11 @@
   clear: both;
 }
 
+.action {
+  @include trailer(1);
+}
 .submit {
+  color: #111;
   display: block;
   border: 1px solid #555;
   padding: 5px 20px;

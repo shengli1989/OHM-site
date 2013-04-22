@@ -2,13 +2,19 @@
   clear: both;
   @include pie-clearfix;
 }
-
+.mgr0 {
+  margin-right: 0 !important;
+}
 .block {
   position: relative;
   display: block;
   height: 0;
   background-size: cover;
   background-position: center center;
+  @include transition(.5s);
+  &:hover {
+    opacity: .75;
+  }
 }
 
 .block-content {
@@ -18,13 +24,16 @@
   width: 100%;
   @include box-sizing(border-box);
   padding: 20px;
+
 }
 
 .title-name {
+  @include transition(.3s);
   float: left;
 }
 
 .title-number {
+  @include transition(.3s);
   float: left;
   @include adjust-font-size-to(44px,1);
 }
@@ -103,10 +112,9 @@ $col: 8;
     @include ellipsis;
   }
   .project-block-group {
-    $tot-col: 10;
     @include span-columns(10,10);
-    @for $width from 1 through 5 {
-       @for $height from 1 through 5 {
+    @for $width from 1 through 3 {
+       @for $height from 1 through 3 {
         .block-#{$width}-#{$height} {
           width: columns($width*2,$tot-col);
           padding-top: columns($height*2,$tot-col);
@@ -118,10 +126,8 @@ $col: 8;
       margin-right: gutter($tot-col);
       margin-bottom: gutter($tot-col);
     }
-    .mgr0 {
-      margin-right: 0;
-    }
   }
+
 }
 
 // responsive-desktop
@@ -162,5 +168,20 @@ $col: 8;
       @include nth-omega;
     }
   }
-
+  .project-block-group {
+    @include span-columns($tot-col,$tot-col);
+    @for $width from 1 through 3 {
+       @for $height from 1 through 3 {
+        .block-#{$width}-#{$height} {
+          width: columns($width*3,$tot-col);
+          padding-top: columns($height*3,$tot-col);
+        }
+      }
+    }
+    .block {
+      float: left;
+      margin-right: gutter($tot-col);
+      margin-bottom: gutter($tot-col);
+    }
+  }
 }
